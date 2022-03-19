@@ -1,0 +1,5 @@
+# format of input in train. easy to get with existed code from MIDI file.
+# 
+<s> <s> <s> <s> <s> <s> <s> <s> <0-82> <1-59> <2-0> <3-36> <4-12> <5-12> <6-9> <7-33> ...... <0-159> <1-2> <2-0> <3-56> <4-7> <5-19> <6-9> <7-33> </s> </s> </s> </s> </s> </s> </s>
+<s> <s> <s> <s> <s> <s> <s> <s> <0-82> <1-59> <2-0> <3-36> <4-12...... </s> </s> </s> </s> </s> </s> </s>
+# one line per score.
