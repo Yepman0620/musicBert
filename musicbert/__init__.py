@@ -14,8 +14,11 @@ Chord recognition的需求: prediction per input 长度 = input长度
     然后参考binarize_genre.sh 和 binarize_nsp.sh 做 preprocess
     有两种策略: segmentation的有无。
     segmentation-informed 的 chord recognition 准确率已经非常高了, 如果要做segmentation可以只做 segmentation。
-    如果做segmentation: 用HT 的 encoder 策略。(label: 1/0)
-    否则用HT 的 decoder 策略. (label: 24+1 种chord)
+
+data:
+MIDI in zip -> (train.id, train.text, train.label)-> binary
+改 gen_genre 得到 gen_chord
+label format: to be determined
 '''
 
 import fairseq.tasks.sentence_prediction
