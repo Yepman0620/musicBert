@@ -1,6 +1,4 @@
 # one line per input.
 
-# for segmentation: chord change or not for every bar (no more than 256 bars)
-1 0 1 0 0 ...
-# for non-segment1: chord prediction for every bar.
+# for non-segment1: chord prediction for every frame.
 9 9 2 2 2 ...
