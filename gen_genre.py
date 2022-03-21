@@ -30,6 +30,8 @@ all_data = manager.list()
 pool_num = 24
 
 labels = dict()
+
+# 取得 midi 和 genre 的映射
 with open('midi_genre_map.json') as f:
     for s in json.load(f)[subset].items():
         labels[s[0]] = tuple(

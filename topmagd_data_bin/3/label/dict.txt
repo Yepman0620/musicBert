@@ -1,0 +1,12 @@
+Pop_Rock 240
+Electronic 28
+RnB 28
+Country 24
+Vocal 19
+Folk 12
+Jazz 12
+Latin 12
+International 8
+New-Age 8
+Rap 4
+madeupword0000 0

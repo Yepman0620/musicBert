@@ -8,8 +8,8 @@ TOKENS_PER_SAMPLE=8192
 MAX_POSITIONS=8192
 BATCH_SIZE=64
 MAX_SENTENCES=4
-N_GPU_LOCAL=$(nvidia-smi --query-gpu=name --format=csv,noheader | wc -l)
-UPDATE_FREQ=$((${BATCH_SIZE} / ${MAX_SENTENCES} / ${N_GPU_LOCAL}))
+N_GPU_LOCAL=0 #$(nvidia-smi --query-gpu=name --format=csv,noheader | wc -l)
+UPDATE_FREQ=1 #$((${BATCH_SIZE} / ${MAX_SENTENCES} / ${N_GPU_LOCAL}))
 if [ -z ${1+x} ]; then echo "subset not set" && exit 1; else echo "subset = $1"; fi
 if [ -z ${2+x} ]; then echo "num classes not set" && exit 1; else echo "num classes = $2"; fi
 if [ -z ${3+x} ]; then echo "fold index not set" && exit 1; else echo "fold index = $3"; fi

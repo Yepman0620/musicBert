@@ -274,6 +274,8 @@ def encoding_to_MIDI(encoding):
             duration = 1
         end = start + duration
         velocity = e2v(i[5])
+        if(duration==0):
+            continue
         midi_obj.instruments[program].notes.append(miditoolkit.containers.Note(
             start=start, end=end, pitch=pitch, velocity=velocity))
     midi_obj.instruments = [
