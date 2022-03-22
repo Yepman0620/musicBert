@@ -7,7 +7,7 @@ nsp: prediction per input 的长度 > 1, num_class 即是乐谱的编码
     在fairseq中属于 sentence_prediction 任务
 genre: prediction per input 的长度 = 1, num_class 即是genre的分类
     这里他们自己写了任务: sentence_prediction_multilabel
-Chord recognition的需求: prediction per input 长度 = input长度
+Chord recognition的需求: prediction per input 长度 = 时间长度
     可以用fairseq 的 translation task 来实现。
     data需要切分成标准形式: 源(前缀.input)、目标(前缀.label), 前缀对应train/valid/test
     参考: https://blog.csdn.net/qq_42734797/article/details/112916511?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-2-112916511.pc_agg_new_rank&utm_term=fairseq+%E8%AF%BB%E5%8F%96%E6%95%B0%E6%8D%AE&spm=1000.2123.3001.4430
